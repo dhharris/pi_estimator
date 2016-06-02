@@ -76,7 +76,7 @@ int main(int argc, char **argv)
     double pi;
 
     if (argc != 3) {
-        fprintf(stderr, "%s <max sample size> <number of threads>\n", *argv);
+        fprintf(stderr, "%s <sample size> <number of threads>\n", *argv);
         return 1;
     }
     if ((max_iter = strtoll(argv[1], NULL, 10)) <= 1) {
